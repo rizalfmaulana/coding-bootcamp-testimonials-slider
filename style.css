@@ -99,6 +99,10 @@ main {
   border-radius: 0 50% 50% 0;
 }
 
+#first {
+  display: block;
+}
+
 #second {
   display: none;
 }
