@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/pattern-bg.svg"),
+    url("./images/pattern-curve.svg");
+  background-size: 40%;
+  background-position: 700px 10px, left bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.container {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75%;
+}
+
+.desc {
+  transform: translate(40px);
+  z-index: 2;
+}
+.photo {
+  transform: translate(-50px);
+}
+
+.desc-image {
+  display: inline-block;
+  transform: translate(70px, 30px);
+}
+.desc h1 {
+  font-size: 30px;
+  color: var(--Dark-Blue);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.desc p {
+  color: var(--Dark-Blue);
+  font-weight: 700;
+}
+
+.desc p span {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--Grayish-Blue);
+}
+
+.images {
+  display: inline-block;
+  width: 400px;
+  box-shadow: 5px 20px 10px -8px var(--Grayish-Blue);
+}
+
+.button-container {
+  width: 80px;
+  height: 36px;
+  text-align: center;
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid white;
+  box-shadow: 0 8px 10px -8px #000000;
+  transform: translate(45px, -20px);
+}
+
+.button-container img {
+  padding: 8px;
+}
+
+.button-container img:hover {
+  cursor: pointer;
+}
+
+.left {
+  border-radius: 50% 0 0 50%;
+}
+
+.right {
+  border-radius: 0 50% 50% 0;
+}
+
+#second {
+  display: none;
+}
